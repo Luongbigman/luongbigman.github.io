@@ -1,182 +1,12 @@
 <!DOCTYPE html>
-<html lang="vi" >
+<html lang="vi">
 <head>
   <meta charset="UTF-8">
   <title>BuiDucLuong - Profile Card</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href='https://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
-<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
-<style>
-wuziuu {
-  font-weight: 800;
-  text-align: center;
-  font-size: 30px;
-  font-family: Hack, sans-serif;
-  text-transform: uppercase;
-  background: linear-gradient(90deg, #000, #fff, #000);
-  letter-spacing: 5px;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-repeat: no-repeat;
-  background-size: 80%;
-  animation: shine 5s linear infinite;
-  position: relative;
-}
-
-@keyframes shine {
-  0% {
-    background-position-x: -500%;
-  }
-  100% {
-    background-position-x: 500%;
-  }
-}
- .default-page {
-        display: block;
-    }
-    .index-page {
-        display: none;
-    }
-* {
-	padding: 0;
-	margin: 0;
-}
-
-html,body {
-        display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 90vh;
-	background-color: #191919;
-	font-family: tahoma, sans-serif;
-	color: #E6EBEE;
-}
-
-#card {
-	background-color: #393B45;
-	height: auto;
-	width: 350px;
-	margin: 10vh auto;
-	border-radius: 25px;
-	padding-bottom: 1px;
-	box-shadow: 2px 2px 5px #4069E2;
-}
-
-
-h1 {
-	color: white;
-	text-align: center;
-	width: 100%;
-	background-color: #E6EBEE;
-	border-radius: 25px 25px 0 0;
-	color: #393B45;
-	padding: 30px 0;
-	font-weight: 800;
-	margin: 0;
-}
-.image-crop {
-	display: block;
-	position: relative;
-	background-color: #E6EBEE;
-	width: 150px;
-	height: 150px;
-	margin: 0 auto;
-	margin-top: 30px;
-	overflow: hidden;
-	border-radius: 50%;
-	box-shadow: 1px 1px 5px #4069E2;
-}
-
-#avatar {
-	display: inline;
-	height: 230px;
-	width: auto;
-	margin-left: -34px;
-}
-
-#bio {
-	display: block;
-	margin: 30px auto;
-	width: 280px;
-	height: auto;
-}
-#bio p {
-	color: #E6EBEE;
-	font-weight: lighter;
-	font-size: 15px;
-	text-align: justify;
-}
-
-#stats {
-	display: flex;
-	flex-direction: row;
-	height: auto;
-	width: 280px;
-	justify-content: space-between;
-	align-items: center;
-	margin: 0 auto;
-	font-weight: 500;
-}
-
-.col {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	width: auto;
-}
-
-.stat {
-	font-size: 25px;
-	margin: 0;
-}
-
-.label {
-	margin: 0;
-}
-#buttons {
-	display: flex;
-	margin: 0 auto;
-	justify-content: space-between;
-	width: 280px;
-}
-
-button {
-	display: block;
-	position: relative;
-	padding: 10px 0;
-	width: 130px;
-	margin: 30px 0;
-	border-radius: 25px;
-	border: none;
-	font-size: 20px;
-	letter-spacing: 0.2px;
-	font-weight: 500;
-	background-color: #4069E2;
-	color: #E6EBEE;
-}
-
-button:focus {
-	display: none;
-}
-
-button:hover {
-	transform: scale(1.03);
-	cursor: pointer;
-	transition: all 0.2s ease-in-out;
-}
-#msg{
-	background-color: #E6EBEE;
-	color: #393B45;
-}
-.sticky-image {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  max-height: 80px;
-}
-</style>
+  <meta content="width=device-width,initial-scale=1"name="viewport">
+<link href="https://fonts.googleapis.com/css?family=Arimo:400,700"rel="stylesheet"type="text/css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"rel="stylesheet">
+<style>wuziuu{font-weight:800;text-align:center;font-size:30px;font-family:Hack,sans-serif;text-transform:uppercase;background:linear-gradient(90deg,#000,#fff,#000);letter-spacing:5px;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;background-repeat:no-repeat;background-size:80%;animation:shine 5s linear infinite;position:relative}@keyframes shine{0%{background-position-x:-500%}100%{background-position-x:500%}}.default-page{display:block}.index-page{display:none}*{padding:0;margin:0}body,html{display:flex;justify-content:center;align-items:center;min-height:90vh;background-color:#191919;font-family:tahoma,sans-serif;color:#E6EBEE}#card{background-color:#393B45;height:auto;width:350px;margin:10vh auto;border-radius:25px;padding-bottom:1px;box-shadow:2px 2px 5px #4069E2}h1{color:#fff;text-align:center;width:100%;background-color:#E6EBEE;border-radius:25px 25px 0 0;color:#393B45;padding:30px 0;font-weight:800;margin:0}.image-crop{display:block;position:relative;background-color:#E6EBEE;width:150px;height:150px;margin:0 auto;margin-top:30px;overflow:hidden;border-radius:50%;box-shadow:1px 1px 5px #4069E2}#avatar{display:inline;height:230px;width:auto;margin-left:-34px}#bio{display:block;margin:30px auto;width:280px;height:auto}#bio p{color:#E6EBEE;font-weight:lighter;font-size:15px;text-align:justify}#stats{display:flex;flex-direction:row;height:auto;width:280px;justify-content:space-between;align-items:center;margin:0 auto;font-weight:500}.col{display:flex;flex-direction:column;justify-content:center;align-items:center;width:auto}.stat{font-size:25px;margin:0}.label{margin:0}#buttons{display:flex;margin:0 auto;justify-content:space-between;width:280px}button{display:block;position:relative;padding:10px 0;width:130px;margin:30px 0;border-radius:25px;border:none;font-size:20px;letter-spacing:.2px;font-weight:500;background-color:#4069E2;color:#E6EBEE}button:focus{display:none}button:hover{transform:scale(1.03);cursor:pointer;transition:all .2s ease-in-out}#msg{background-color:#E6EBEE;color:#393B45}.sticky-image{position:fixed;bottom:20px;left:20px;max-height:80px}</style>
 
 </head>
 <body onload="show_date_time()">
@@ -191,7 +21,7 @@ button:hover {
     <div id="card">
 	<h1>Bui Duc Luong</h1>
 	<div class="image-crop">
-		<img id="avatar" src="https://i.upanh.org/2023/07/31/A2FFD19C-3FC6-4588-9345-66B92F3E68ABd405fa95f8f6d64d.jpeg"></img>
+		<img src="https://i.upanh.org/2023/07/31/A2FFD19C-3FC6-4588-9345-66B92F3E68ABd405fa95f8f6d64d.jpeg"id="avatar">
 	</div>
 	<div id="bio">
 		<p>Xin chào mình là Wuziuu. Để liên hệ với mình hãy nhấn vào các button phía dưới nha.</p>
@@ -203,50 +33,16 @@ button:hover {
 	</div>
 	<div id="buttons">
 		<button onclick="tele()">TELEGRAM</button>
-<button onclick="fb()" id="msg">FACEBOOK</button>
+<button onclick="fb()"id="msg">FACEBOOK</button>
 	</div>
 </div>
 <footer>
-    <img src="https://i.upanh.org/2023/07/31/6A376A7E-E07F-4827-845C-013D92E0C232127802f16cad0509.gif" alt="Sticky Image" class="sticky-image">
+    <img src="https://i.upanh.org/2023/07/31/6A376A7E-E07F-4827-845C-013D92E0C232127802f16cad0509.gif"alt="Sticky Image"class="sticky-image">
   </footer>
 </body>
-<script>
-function tele() {
-  // Mã JavaScript của bạn ở đây
-  // Ví dụ: Chuyển hướng đến trang Telegram
-  window.location.href = "https://t.me/buiducluong";
-}
+<script>function tele(){window.location.href="https://t.me/buiducluong"}function fb(){window.location.href="https://m.me/luongbigman"}</script>
+<script>function show_date_time(){window.setTimeout("show_date_time()",1e3),BirthDay=new Date("2023/07/31"),today=new Date,timeold=today.getTime()-BirthDay.getTime(),sectimeold=timeold/1e3,secondsold=Math.floor(sectimeold),msPerDay=864e5,e_daysold=timeold/msPerDay,daysold=Math.floor(e_daysold),e_hrsold=-24*(daysold-e_daysold),hrsold=Math.floor(e_hrsold),e_minsold=-60*(hrsold-e_hrsold),minsold=Math.floor(-60*(hrsold-e_hrsold)),seconds=Math.floor(-60*(minsold-e_minsold)),document.getElementById("momk").innerHTML="Date Created:<br>"+daysold+" ngày "+hrsold+" giờ "+minsold+" phút "+seconds+" giây"}</script>
 
-function fb() {
-  // Mã JavaScript của bạn ở đây
-  // Ví dụ: Chuyển hướng đến trang Facebook Messenger
-  window.location.href = "https://m.me/luongbigman";
-}
-</script>
-<script>
-        function show_date_time() {
-            window.setTimeout("show_date_time()", 1000);
-            BirthDay = new Date("2023/07/31");
-            today = new Date();
-            timeold = (today.getTime() - BirthDay.getTime());
-            sectimeold = timeold / 1000;
-            secondsold = Math.floor(sectimeold);
-            msPerDay = 24 * 60 * 60 * 1000;
-            e_daysold = timeold / msPerDay;
-            daysold = Math.floor(e_daysold);
-            e_hrsold = (daysold - e_daysold) * -24;
-            hrsold = Math.floor(e_hrsold);
-            e_minsold = (hrsold - e_hrsold) * -60;
-            minsold = Math.floor((hrsold - e_hrsold) * -60);
-            seconds = Math.floor((minsold - e_minsold) * -60);
-            document.getElementById("momk").innerHTML = "Date Created:" + "<br>" + daysold + " ngày " + hrsold + " giờ " + minsold + " phút " + seconds + " giây";
-        }
-    </script>
-
-<script>
-    setTimeout(function() {
-        document.querySelector('.default-page').style.display = 'none';
-        document.querySelector('.index-page').style.display = 'block';
-    }, 5000);
-</script>
+<script>setTimeout(function(){document.querySelector(".default-page").style.display="none",document.querySelector(".index-page").style.display="block"},5e3)</script>
+</html>
 </html>
